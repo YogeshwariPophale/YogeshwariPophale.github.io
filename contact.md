@@ -1,1 +1,12 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+---
+
+# Contact
+
+LinkedIn:  
+Email:  
+GitHub:
 
