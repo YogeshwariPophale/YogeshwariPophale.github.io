@@ -1,6 +1,9 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
 # Projects
 
-Projects will be added one by one.
-
-Stay tuned.
-
+Projects will be added here soon.
