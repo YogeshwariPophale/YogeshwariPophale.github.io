@@ -3,19 +3,30 @@ layout: default
 title: Home
 ---
 
-# Yogeshwari Pophale Portfolio
+{% include nav.html %}
 
-[Home](/) | 
-[Projects](/projects/) | 
-[Skills](/skills/) | 
-[About](/about/) | 
-[Contact](/contact/)
+<br>
+
+# Yogeshwari Pophale
+
+### MS Computational Data Science @ UCR  
+**Data Analyst | Data Scientist**
+
+I build data-driven solutions using analytics, machine learning, and visualization to transform complex data into meaningful insights.
+
+<br>
 
 ---
 
-## Hey, this is Yogeshwari Pophale
+### Explore
 
-MS Computational Data Science @ UCR  
-Data Analyst | Data Scientist
+- 📊 [Projects](/projects/) — Case studies and analytics work  
+- 🧠 [Skills](/skills/) — Technical toolkit and competencies  
+- 👩‍💻 [About](/about/) — Background and experience  
+- 📬 [Contact](/contact/) — Get in touch
 
-Welcome to my portfolio website.
+---
+
+<br>
+
+*"Data is most powerful when it tells a clear story."*
