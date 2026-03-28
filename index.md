@@ -3,7 +3,17 @@ layout: default
 title: Home
 ---
 
-# Hey, this is Yogeshwari Pophale
+# Yogeshwari Pophale Portfolio
+
+[Home](/) | 
+[Projects](/projects/) | 
+[Skills](/skills/) | 
+[About](/about/) | 
+[Contact](/contact/)
+
+---
+
+## Hey, this is Yogeshwari Pophale
 
 MS Computational Data Science @ UCR  
 Data Analyst | Data Scientist
