@@ -3,10 +3,9 @@ layout: default
 title: Home
 ---
 
-# Hi, I'm [Your Name]
+# Hey, this is Yogeshwari Pophale
 
-MS Computational Data Science @ UCR
-
+MS Computational Data Science @ UCR  
 Data Analyst | Data Scientist
 
 Welcome to my portfolio website.
