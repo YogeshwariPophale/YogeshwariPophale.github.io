@@ -1,26 +1,60 @@
-/* ===== GLOBAL STYLE ===== */
+/* =========================
+   GLOBAL RESET
+========================= */
 
 body {
     margin: 0;
     background-color: #0b0000;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;   /* base size */
 }
 
-/* NAVBAR */
+/* =========================
+   TYPOGRAPHY SCALE
+========================= */
+
+/* Main Name / Page Title */
+h1 {
+    font-size: 32px;
+    color: #ff2e2e;
+    margin-bottom: 10px;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 18px;
+    color: #ff4d4d;
+    margin-top: 35px;
+}
+
+/* Body Text */
+p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Small Text */
+.small-text {
+    font-size: 14px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
     background-color: #140000;
-    padding: 18px;
+    padding: 16px;
     text-align: center;
     border-bottom: 1px solid #8b0000;
 }
 
 .navbar a {
+    font-size: 14px;
     color: white;
-    margin: 0 18px;
     text-decoration: none;
-    font-weight: bold;
+    margin: 0 20px;
     letter-spacing: 1px;
 }
 
@@ -28,31 +62,25 @@ body {
     color: #ff2e2e;
 }
 
-/* CONTENT */
+/* =========================
+   PAGE LAYOUT
+========================= */
 
 .container {
-    max-width: 900px;
+    max-width: 850px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
-h1 {
-    color: #ff2e2e;
-    font-size: 42px;
-}
-
-h2 {
-    color: #ff4d4d;
-    margin-top: 40px;
-}
-
-p {
-    line-height: 1.7;
-}
-
-/* LINKS */
+/* =========================
+   LINKS
+========================= */
 
 a {
     color: #ff4d4d;
+}
+
+a:hover {
+    color: #ff2e2e;
 }
