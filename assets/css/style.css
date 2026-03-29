@@ -1,86 +1,111 @@
-/* =========================
-   GLOBAL RESET
-========================= */
+/* =================================================
+   GLOBAL STYLE — DARK BLOOD RED THEME
+================================================= */
 
 body {
     margin: 0;
-    background-color: #0b0000;
-    color: white;
     font-family: "Times New Roman", Times, serif;
-    font-size: 16px;   /* base size */
+    font-size: 16px;
+    color: white;
+
+    /* Blood red + black tint gradient */
+    background: radial-gradient(circle at top,
+        #3b0000 0%,
+        #1a0000 40%,
+        #0a0000 75%,
+        #000000 100%);
 }
 
-/* =========================
+/* =================================================
    TYPOGRAPHY SCALE
-========================= */
+================================================= */
 
-/* Main Name / Page Title */
 h1 {
     font-size: 32px;
-    color: #ff2e2e;
     margin-bottom: 10px;
+    color: white;
 }
 
-/* Section Titles */
 h2 {
     font-size: 18px;
-    color: #ff4d4d;
     margin-top: 35px;
+    color: white;
 }
 
-/* Body Text */
 p {
     font-size: 16px;
     line-height: 1.7;
+    color: white;
 }
 
-/* Small Text */
 .small-text {
     font-size: 14px;
 }
 
-/* =========================
+/* =================================================
    NAVBAR
-========================= */
+================================================= */
 
 .navbar {
-    background-color: #140000;
-    padding: 16px;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 18px;
     text-align: center;
-    border-bottom: 1px solid #8b0000;
+    border-bottom: 1px solid #550000;
 }
 
 .navbar a {
     font-size: 14px;
     color: white;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 22px;
     letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
+/* Ivory shine hover */
 .navbar a:hover {
-    color: #ff2e2e;
+    color: #fffff0; /* ivory */
+    text-shadow:
+        0 0 6px #fffff0,
+        0 0 12px rgba(255,255,240,0.6);
 }
 
-/* =========================
-   PAGE LAYOUT
-========================= */
+/* =================================================
+   PAGE CONTAINER
+================================================= */
 
 .container {
     max-width: 850px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-/* =========================
+/* =================================================
    LINKS
-========================= */
+================================================= */
 
 a {
-    color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 a:hover {
-    color: #ff2e2e;
+    color: #fffff0;
+    text-shadow:
+        0 0 5px #fffff0,
+        0 0 10px rgba(255,255,240,0.6);
+}
+
+/* =================================================
+   SUBTLE DIVIDER
+================================================= */
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #660000, transparent);
+    margin: 40px auto;
+    width: 60%;
 }
