@@ -9,7 +9,7 @@
 </div>
 
 ---
-layout: default
+layout: null
 title: Home
 ---
 
