@@ -25,4 +25,11 @@ body {
     background: transparent; /* IMPORTANT */
 }
 
-
+/* Center text everywhere without breaking layout */
+.page-content,
+.wrapper,
+.post-content,
+.site-header,
+.site-footer {
+  text-align: center;
+}
