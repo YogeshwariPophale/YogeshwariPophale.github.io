@@ -212,3 +212,35 @@ body::before {
     opacity: 0.04;
     pointer-events: none;
 }
+
+/* =================================================
+   SKILLS GRID (TEMPLATE SAFE)
+================================================= */
+
+.skill-icon {
+    display: inline-block;
+    text-align: center;
+    margin: 18px 22px;
+}
+
+.skill-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* subtle cinematic hover */
+.skill-icon img:hover {
+    transform: translateY(-4px) scale(1.08);
+    filter: drop-shadow(0 0 8px rgba(255,255,240,0.4));
+}
+
+.skill-label {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--soft-ivory);
+}
+
