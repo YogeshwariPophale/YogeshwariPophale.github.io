@@ -8,26 +8,21 @@ html, body {
 }
 
 body {
+    margin: 0;
     font-family: "Times New Roman", Times, serif;
     font-size: 16px;
     color: white;
 
-    /* Blood red → black gradient */
-    background: radial-gradient(circle at top,
+    /* Full-page blood red background */
+    background-color: #0a0000; /* fallback */
+
+    background-image: radial-gradient(circle at top,
         #3b0000 0%,
         #1a0000 40%,
         #0a0000 75%,
         #000000 100%);
 
-   background: radial-gradient(circle at 50% -20%,
-    #4a0000 0%,
-    #1a0000 45%,
-    #080000 80%,
-    #000000 100%);
-
-    background-attachment: fixed;   /* keeps gradient full-screen */
     background-repeat: no-repeat;
-    background-size: cover;
-
-    min-height: 100vh; /* KEY LINE */
+    background-size: 100% 100vh; /* KEY FIX */
 }
+
