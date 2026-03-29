@@ -1,3 +1,13 @@
+<link rel="stylesheet" href="assets/css/style.css">
+
+<div class="navbar">
+  <a href="/">Home</a>
+  <a href="/projects.html">Projects</a>
+  <a href="/skills.html">Skills</a>
+  <a href="/about.html">About</a>
+  <a href="/contact.html">Contact</a>
+</div>
+
 ---
 layout: default
 title: Home
