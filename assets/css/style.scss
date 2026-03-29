@@ -1,26 +1,61 @@
----
----
-
-/* Import theme first */
-@import "{{ site.theme }}";
-
 /* =========================
-   GLOBAL BACKGROUND
+   GLOBAL STYLE
 ========================= */
 
 body {
-    background-color: #0b0000; /* deep black-red */
-    color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  background: #050000;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background: #0b0000;
+  padding: 18px 40px;
+  border-bottom: 1px solid #330000;
+  text-align: center;
+}
+
+.navbar a {
+  color: #ff2b2b;
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.navbar a:hover {
+  color: white;
+  text-shadow: 0 0 8px #ff0000;
+}
+
+/* =========================
+   CONTENT AREA
+========================= */
+
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 /* =========================
    HEADINGS
 ========================= */
 
-h1, h2, h3, h4 {
-    color: #ff1a1a; /* blood red */
-    font-weight: 600;
+h1 {
+  color: #ff1a1a;
+  font-size: 2.5rem;
+  text-shadow: 0 0 12px rgba(255,0,0,0.4);
+}
+
+h2, h3 {
+  color: #ff3b3b;
 }
 
 /* =========================
@@ -28,62 +63,20 @@ h1, h2, h3, h4 {
 ========================= */
 
 a {
-    color: #ff4d4d;
-    text-decoration: none;
+  color: #ff4d4d;
 }
 
 a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 6px #ff0000;
+  color: white;
 }
 
 /* =========================
-   NAVIGATION BAR
-========================= */
-
-div a {
-    margin-right: 12px;
-    font-weight: 500;
-}
-
-/* =========================
-   SEPARATORS
+   MINIMAL SEPARATORS
 ========================= */
 
 hr {
-    border: none;
-    height: 1px;
-    background: #330000;
-}
-
-/* =========================
-   CONTENT WIDTH (Minimal Look)
-========================= */
-
-.wrapper {
-    max-width: 850px;
-    margin: auto;
-}
-
-/* =========================
-   SUBTLE GLOW EFFECT
-========================= */
-
-h1 {
-    text-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
-}
-
-/* =========================
-   BUTTON STYLE (future use)
-========================= */
-
-.button {
-    background-color: #8b0000;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 6px;
-}
-
-.button:hover {
-    background-color: #ff0000;
+  border: none;
+  height: 1px;
+  background: #330000;
+  margin: 40px 0;
 }
