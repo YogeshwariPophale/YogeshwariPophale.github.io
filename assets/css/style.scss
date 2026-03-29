@@ -27,6 +27,8 @@ body {
     color: #ff2a2a;
 }
 
+<div class="container">
+
 /* ===== Content ===== */
 .container {
     max-width: 900px;
@@ -47,6 +49,9 @@ h1, h2, h3 {
     text-decoration: none;
     border-radius: 5px;
 }
+
+</div>
+
 
 .button:hover {
     background-color: #ff2a2a;
