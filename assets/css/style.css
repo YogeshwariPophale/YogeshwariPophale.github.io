@@ -1,111 +1,212 @@
 /* =================================================
-   GLOBAL STYLE — DARK BLOOD RED THEME
+   GLOBAL STYLE — DARK BLOOD RED THEME (ENHANCED)
 ================================================= */
 
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blood-red: #7a0000;
+    --deep-red: #3b0000;
+    --dark-bg: #0a0000;
+    --ivory: #f5f1ea;
+    --soft-ivory: #d8d2c6;
+    --border-red: #550000;
+}
+
+body {
     font-family: "Times New Roman", Times, serif;
     font-size: 16px;
-    color: white;
+    color: var(--ivory);
+    line-height: 1.7;
+    letter-spacing: 0.3px;
 
-    /* Blood red + black tint gradient */
-    background: radial-gradient(circle at top,
-        #3b0000 0%,
-        #1a0000 40%,
-        #0a0000 75%,
-        #000000 100%);
+    /* Cinematic depth gradient */
+    background:
+        radial-gradient(circle at top,
+            #3b0000 0%,
+            #1a0000 40%,
+            #0a0000 75%,
+            #000000 100%);
+
+    min-height: 100vh;
+
+    /* subtle entrance */
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Soft cinematic fade */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* =================================================
-   TYPOGRAPHY SCALE
+   TYPOGRAPHY SCALE — EDITORIAL HIERARCHY
 ================================================= */
 
+h1, h2 {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
 h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: white;
+    font-size: 34px;
+    margin-bottom: 12px;
 }
 
 h2 {
     font-size: 18px;
-    margin-top: 35px;
-    color: white;
+    margin-top: 40px;
+    color: var(--soft-ivory);
 }
 
 p {
     font-size: 16px;
-    line-height: 1.7;
-    color: white;
+    color: #d9d2c7;
+    max-width: 65ch; /* readable line width */
+    margin: auto;
 }
 
 .small-text {
     font-size: 14px;
+    color: #bfb7aa;
 }
 
 /* =================================================
-   NAVBAR
+   NAVBAR — GLASS GOTHIC STYLE
 ================================================= */
 
 .navbar {
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
     padding: 18px;
     text-align: center;
-    border-bottom: 1px solid #550000;
+    border-bottom: 1px solid var(--border-red);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar a {
     font-size: 14px;
-    color: white;
+    color: var(--ivory);
     text-decoration: none;
     margin: 0 22px;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+    letter-spacing: 1.2px;
+    position: relative;
+    transition: all 0.35s ease;
 }
 
-/* Ivory shine hover */
+/* Elegant underline reveal */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    left: 0;
+    bottom: -4px;
+    background: var(--ivory);
+    transition: width 0.35s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Ivory glow hover */
 .navbar a:hover {
-    color: #fffff0; /* ivory */
+    color: #fffff0;
     text-shadow:
         0 0 6px #fffff0,
-        0 0 12px rgba(255,255,240,0.6);
+        0 0 14px rgba(255,255,240,0.45);
 }
 
 /* =================================================
-   PAGE CONTAINER
+   PAGE CONTAINER — CINEMATIC SPACING
 ================================================= */
 
 .container {
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 80px 24px;
     text-align: center;
 }
 
 /* =================================================
-   LINKS
+   LINKS — EDITORIAL STYLE
 ================================================= */
 
 a {
-    color: white;
+    color: var(--ivory);
     text-decoration: none;
+    position: relative;
     transition: all 0.3s ease;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    left: 0;
+    bottom: -2px;
+    background: var(--ivory);
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
 }
 
 a:hover {
     color: #fffff0;
     text-shadow:
-        0 0 5px #fffff0,
-        0 0 10px rgba(255,255,240,0.6);
+        0 0 5px rgba(255,255,240,0.6);
 }
 
 /* =================================================
-   SUBTLE DIVIDER
+   SUBTLE DIVIDER — CINEMATIC LINE
 ================================================= */
 
 hr {
     border: none;
     height: 1px;
-    background: linear-gradient(to right, transparent, #660000, transparent);
-    margin: 40px auto;
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #660000,
+            #aa0000,
+            #660000,
+            transparent
+        );
+    margin: 50px auto;
     width: 60%;
+    opacity: 0.7;
+}
+
+/* =================================================
+   FILM GRAIN OVERLAY (PRO DESIGN TRICK)
+================================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    opacity: 0.04;
+    pointer-events: none;
 }
