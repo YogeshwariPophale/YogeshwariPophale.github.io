@@ -1,7 +1,6 @@
 /* =================================================
-   FULL PAGE BACKGROUND FIX
+   FULL PAGE BACKGROUND — BLOOD RED CINEMATIC
 ================================================= */
-/* FULL PAGE BACKGROUND — GLOBAL */
 
 html {
     min-height: 100%;
@@ -18,18 +17,165 @@ html, body {
 }
 
 body {
-    margin: 0;
     font-family: "Times New Roman", Times, serif;
     font-size: 16px;
     color: white;
-    background: transparent; /* IMPORTANT */
+    background: transparent;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
 }
 
-/* Center text everywhere without breaking layout */
+
+/* =================================================
+   TYPOGRAPHY SCALE (32 / 18 / 16 / 14)
+================================================= */
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p, li {
+    font-size: 16px;
+}
+
+small {
+    font-size: 14px;
+}
+
+
+/* =================================================
+   CENTER TEXT (WITHOUT BREAKING LAYOUT)
+================================================= */
+
 .page-content,
 .wrapper,
 .post-content,
 .site-header,
 .site-footer {
-  text-align: center;
+    text-align: center;
+}
+
+
+/* =================================================
+   CINEMATIC SPACING (EDITORIAL FEEL)
+================================================= */
+
+.wrapper {
+    max-width: 720px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+section,
+hr {
+    margin: 50px auto;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 60%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+}
+
+
+/* =================================================
+   LINKS — IVORY SHINE EFFECT
+================================================= */
+
+a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.35s ease;
+}
+
+/* subtle underline */
+a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    left: 50%;
+    bottom: -3px;
+    background: #fffff0; /* ivory */
+    transition: all 0.35s ease;
+    transform: translateX(-50%);
+}
+
+/* HOVER GLOW */
+a:hover {
+    color: #fffff0;
+    text-shadow:
+        0 0 6px rgba(255,255,240,0.6),
+        0 0 14px rgba(255,255,240,0.35);
+}
+
+a:hover::after {
+    width: 70%;
+}
+
+
+/* =================================================
+   NAVBAR — DARK EDITORIAL STYLE
+================================================= */
+
+.navbar {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.navbar a {
+    margin: 0 18px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/* =================================================
+   SUBTLE FADE-IN (CINEMATIC ENTRY)
+================================================= */
+
+.page-content {
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =================================================
+   SELECTION COLOR (AESTHETIC DETAIL)
+================================================= */
+
+::selection {
+    background: #6b0000;
+    color: #ffffff;
 }
