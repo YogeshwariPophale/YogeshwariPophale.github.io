@@ -1,40 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Projects</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio projects by Yogeshwari Pophale in SQL, Python, Flask, PostgreSQL, Hadoop, Docker, LLMs, NLP, and manufacturing analytics.">
+    <title>Projects | Yogeshwari Pophale</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<div class="navbar">
+<nav class="navbar" aria-label="Primary navigation">
     <a href="index.html">Home</a>
+    <a href="experience.html">Experience</a>
     <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
+    <a href="projects.html" aria-current="page">Projects</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-</div>
+</nav>
 
-<div class="container">
+<main class="page">
+    <section class="page-header">
+        <p class="eyebrow">Projects</p>
+        <h1>Selected analytics and data science work.</h1>
+        <p>
+            These projects highlight the work I want to keep doing in U.S. data analyst and data scientist roles: structured SQL analysis, automated reporting, data quality checks, dashboards, ML/NLP workflows, and practical stakeholder outputs.
+        </p>
+    </section>
 
-<h1>Projects</h1>
+    <section class="project-grid">
+        <article class="project-card">
+            <div class="project-meta">Python - Gemini API - LLMs - NLP</div>
+            <h2>AI-Powered Research Proposal Workflow Agent</h2>
+            <p>
+                Built a Gemini-powered workflow assistant that supports proposal planning, drafting, revision, evaluation, and recommendation generation.
+            </p>
+            <ul>
+                <li>Designed prompt-engineering pipelines for content generation and structured quality assessment.</li>
+                <li>Generated review summaries, evaluation artifacts, and AI-assisted recommendations to improve proposal consistency.</li>
+                <li>Focused on workflow reliability, explainable feedback, and reusable outputs for research planning.</li>
+            </ul>
+        </article>
 
-<h2>Industrial Analytics Dashboard</h2>
-<p>Coming soon</p>
+        <article class="project-card">
+            <div class="project-meta">SQL - PostgreSQL - Flask - Hadoop - Docker</div>
+            <h2>Hotel Reservation Analytics Platform</h2>
+            <p>
+                Created a PostgreSQL and Flask analytics platform for querying and visualizing hotel reservation behavior across booking, pricing, and customer dimensions.
+            </p>
+            <ul>
+                <li>Built dynamic SQL filtering workflows for exploratory analysis and dashboard-style views.</li>
+                <li>Used Hadoop and Docker to support scalable processing and reproducible deployment.</li>
+                <li>Structured the project around analyst workflows: slicing, filtering, comparing, and communicating findings.</li>
+            </ul>
+        </article>
 
-<h2>Machine Learning Case Study</h2>
-<p>Coming soon</p>
+        <article class="project-card">
+            <div class="project-meta">Python - SQL - SAP - KPI Reporting</div>
+            <h2>Manufacturing Reporting & Data Quality Pipelines</h2>
+            <p>
+                Developed Python-based reporting, validation, and data quality workflows for manufacturing operations at Bajaj Auto.
+            </p>
+            <ul>
+                <li>Reduced manual reporting effort by 40% through repeatable validation and reporting pipelines.</li>
+                <li>Queried SAP BOM, procurement, inventory, and production data across 200+ components.</li>
+                <li>Supported KPI dashboards for throughput, quality, process deviations, and operational efficiency.</li>
+            </ul>
+        </article>
 
-<h2>ROI of College Majors Analysis</h2>
-<p>Coming soon</p>
-
-<h2>SQL Analytics Project</h2>
-<p>Coming soon</p>
-
-<h2>End-to-End Data Project</h2>
-<p>Coming soon</p>
-
-</div>
+        <article class="project-card">
+            <div class="project-meta">Python - Statistical Analysis - Anomaly Detection</div>
+            <h2>Engineering Validation Analytics</h2>
+            <p>
+                Automated engineering analysis workflows and investigated validation datasets for Rolls-Royce Power Systems.
+            </p>
+            <ul>
+                <li>Reduced validation cycle time by 85% with Python simulation and analysis tooling.</li>
+                <li>Analyzed performance, failure, and validation data for mtu S1600 engine overheating mitigation.</li>
+                <li>Used statistical profiling to identify anomalies, failure trends, and quality risks.</li>
+            </ul>
+        </article>
+    </section>
+</main>
 
 </body>
 </html>
